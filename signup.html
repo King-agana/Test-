@@ -1,0 +1,73 @@
+<?php
+
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <section class="flex">
+        <h2><img src="4logo.jpg" alt="logo"></h2>
+        <nav class="navbar">
+            <a href="login.html">Login</a>
+            <a href="signup.html" >Registration</a>
+            <a href="reset.html">Contact</a>
+        </nav>
+        <div id="menu-btn" style="@media(max-width)" class="fas fa-bars"></div>
+        
+    </section>
+</header>
+    <header class="hed" >
+      <h1>SIGN UP</h1>
+    </header>
+
+    <main class="mainn">
+        <form class="contact">
+            
+              <p><label for="name">Name <em>Have an accout already?<a href="login.html">login</a></em></label></p>
+              <div class="input-control">
+
+                <input name="first" type="text" class="matt" required placeholder="First Name" autocomplete="none">
+
+                <div class="error" data-error="First Name cannot be empty"></div>
+
+
+            </div>
+            <label for="password">Last name:</label> <br>
+            <div class="input-control">
+
+
+
+                <input type="text" name="last" class="matt"  required placeholder="Last Name" autocomplete="none">
+                <div class="error" data-error="Last Name cannot be empty" ></div>
+
+            </div>
+            <label for="password">Email:</label> <br>
+            <div class="input-control">
+
+                <input id="email" type="email" class="matt" required placeholder="Email Address" autocomplete="none"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-itz]{2, 4}$">
+
+                <div class="error" data-error="Looks like this is not an email" ></div>
+
+            </div>
+
+            <label for="password">Password:</label> <br>
+            <div class="input-control">
+
+                <input type="password" name="password"class="matt"  required placeholder="Password">
+                <div class="error" data-error="Password cannot be empty"></div>
+                <button type="submit">signup</button>
+            
+        </form>
+              
+    </main>
+</body>
+</html>
